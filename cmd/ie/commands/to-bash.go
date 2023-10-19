@@ -73,7 +73,7 @@ var toBashCommand = &cobra.Command{
 				return err
 			}
 
-			fmt.Printf("ie_us%sie_ue\n", scriptJson)
+			fmt.Printf("ie_us%sie_ue", scriptJson)
 		} else {
 			fmt.Printf("%s", scenario.ToShellScript())
 		}

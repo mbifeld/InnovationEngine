@@ -64,7 +64,7 @@ func ReportAzureStatus(status AzureDeploymentStatus, environment string) {
 	} else {
 		// We add these strings to the output so that the portal can find and parse
 		// the JSON status.
-		ocdStatus := fmt.Sprintf("ie_us%sie_ue\n", statusJson)
+		ocdStatus := fmt.Sprintf("ie_us%sie_ue", statusJson)
 		fmt.Println(ui.OcdStatusUpdateStyle.Render(ocdStatus))
 	}
 }
